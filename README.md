@@ -71,7 +71,8 @@ when finished. No settings or caches are created by the tool.
   work. CR, LF and NUL inside fields are rejected. No blank records are skipped.
 - Unknown/duplicate JSON keys, duplicate or empty names, ragged rows, invalid
   encoding, truncated records and overflow fail. Schema size is limited to
-  64 KiB; record width and individual CSV field length to 1 MiB; 1–1024 columns.
+  64 KiB and JSON nesting to 128 levels; record width and individual CSV field
+  length to 1 MiB; 1–1024 columns.
 
 For example, changing the name width to 5 makes `東京` fail: its UTF-8 bytes
 cannot fit. No output is published, including when earlier records were valid.
