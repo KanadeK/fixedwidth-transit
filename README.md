@@ -101,7 +101,7 @@ fits dataframe analysis; [evologi/fixed-width](https://github.com/evologi/fixed-
 provides a configurable JavaScript library. This tool focuses on a byte layout
 shared by both conversion directions and refusing lossy writes.
 
-Version 0.1.0 does not parse COBOL copybooks, packed decimals, EBCDIC, UTF-16,
+Version 0.1.1 does not parse COBOL copybooks, packed decimals, EBCDIC, UTF-16,
 mixed record types, compression, remote URLs or stdin. It does not infer layouts,
 sanitize spreadsheet formulas or preserve CSV quoting/line-ending style. Fixed
 record padding follows the declared policy, not the unknowable original intent.

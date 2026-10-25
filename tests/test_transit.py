@@ -224,7 +224,7 @@ class FileTests(unittest.TestCase):
     def test_cli_and_version(self):
         command = [sys.executable, "-m", "fixedwidth_transit"]
         version = subprocess.run(command + ["--version"], capture_output=True, text=True)
-        self.assertEqual(version.stdout.strip(), "0.1.0")
+        self.assertEqual(version.stdout.strip(), "0.1.1")
         args = [
             "encode",
             str(self.source),
