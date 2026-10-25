@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "encoding": "utf-8",
+  "separator": "lf",
+  "fields": [
+    {"name": "id", "width": 4, "padding": "none"},
+    {"name": "name", "width": 12, "padding": "right"},
+    {"name": "code", "width": 4, "padding": "left"}
+  ]
+}

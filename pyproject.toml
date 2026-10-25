@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fixedwidth-transit"
+version = "0.1.0"
+description = "Strict byte-counted fixed-width and CSV conversion with atomic output"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "KanadeK"}]
+dependencies = []
+keywords = ["csv", "data-migration", "cli", "offline"]
+
+[project.scripts]
+fixedwidth-transit = "fixedwidth_transit.cli:main"
+
+[project.urls]
+Repository = "https://github.com/KanadeK/fixedwidth-transit"
+Issues = "https://github.com/KanadeK/fixedwidth-transit/issues"
+
+[tool.setuptools]
+packages = ["fixedwidth_transit"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
